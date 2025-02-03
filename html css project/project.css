@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(image/the-town-bg-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{ 
+    display : flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    animation: header 1s ease-in-out;
+} 
+
+@keyframes header{
+ 0%{
+ transform: translateY(-100%);
+ }
+ }
+.top{
+    color:rgb(75, 44, 41);
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    
+    /* position: relative;  */
+}
+nav li:hover{
+    border-bottom: 2px solid aqua ;
+    transition: 0.4s;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+ 
+.overall{
+    width: 100%;
+    display: flex;
+}
+.all{
+   width: 50%;
+   color: #fff;
+   margin-top: 8%;
+   margin-left: 10%;
+   overflow: hidden;
+   animation: rb7 1s ease-in-out;
+}
+@keyframes rb7{
+    0%{
+    transform: translateX(-50%);
+    }
+}
+.head{
+    font-size:80px;
+}
+span{
+    color: chocolate;
+}
+h3{
+    font-size: 30px;
+    margin-right: 6%;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+button{
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),0 1px 2px rgba(0, 0, 0, 0.24);
+}
+button:hover{
+    background-color: rgb(114, 203, 203);
+    box-shadow: 0 1px 28px rgba(97, 184, 206, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+.images{
+    width: 50%;
+    margin-left:20%;
+    margin-top: 3%;
+}
+img{
+    border-radius: 40%;
+    width: 400px;
+    animation: photo 1s ease-in-out;
+}
+@keyframes photo{
+    0%{
+    transform: translateX(100%);
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    .all{
+        width: 100%;
+        text-align : center;
+        transform: translate( -20px, -40px);       
+    }
+    .images{
+        width:100%;
+        position: absolute;
+        bottom :2%; 
+        display: flex;
+        right: 4px;
+        justify-content: center;
+    }
+    img{
+        width:150px;
+    }
+}
+
